@@ -11,9 +11,11 @@
         body, h1, h5 {
             font-family: "Raleway", sans-serif
         }
+
         body, html {
             height: 100%
         }
+
         .bgimg {
             background-image: url('https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/back.png');
             min-height: 100%;
@@ -26,12 +28,12 @@
     <div class="bgimg w3-display-container">
         <div class="w3-display-topright w3-container w3-rtl w3-xlarge">
             <div class="w3-bar">
-                <button onclick="darkMode().style.display='font-size:48px'"><i class='far fa-lightbulb'></i></button>
-                <a href="https://github.com/Aviroen?tab=repositories"><i class='fa fa-github'></i></a>
-                <a href="https://bsky.app/profile/aviroen.bsky.social"><i class='fas fa-external-link-alt'></i></a>
-                <a href="https://www.twitch.tv/aviroen"><i class='fab fa-twitch'></i></a>
-                <a href="https://ko-fi.com/aviroen"><i class='fa fa-credit-card'></i></a>
-                <a href="https://www.patreon.com/cw/aviroen"><i class='fab fa-patreon'></i></a>
+                <button onclick="darkMode()" class="w3-bar-item w3-button"><i class='far fa-lightbulb'></i></button>
+                <a href="https://github.com/Aviroen?tab=repositories" class="w3-bar-item w3-button"><i class='fa fa-github'></i></a>
+                <a href="https://bsky.app/profile/aviroen.bsky.social" class="w3-bar-item w3-button"><i class='fas fa-external-link-alt'></i></a>
+                <a href="https://www.twitch.tv/aviroen" class="w3-bar-item w3-button"><i class='fab fa-twitch'></i></a>
+                <a href="https://ko-fi.com/aviroen" class="w3-bar-item w3-button"><i class='fa fa-credit-card'></i></a>
+                <a href="https://www.patreon.com/cw/aviroen" class="w3-bar-item w3-button"><i class='fab fa-patreon'></i></a>
             </div>
         </div>
         <div class="w3-margin-top w3-display-topmiddle w3-container w3-xxlarge">
@@ -56,16 +58,16 @@
             </div>
             <div class="w3-container w3-black w3-text-white">
                 <h5>yip <b>$2.50</b></h5>
-                <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/7thanniv.png" class="w3-image"/>
+                <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/7thanniv.png" class="w3-image" />
             </div>
         </div>
     </div>
-    
+
     <script>
-    function darkMode() {
-        let x = document.body;
-        x.classList.toggle("w3-black");
-    }
+        function darkMode() {
+            let x = document.body;
+            x.classList.toggle("w3-black");
+        }
     </script>
 </body>
 </html>
