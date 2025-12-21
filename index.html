@@ -25,17 +25,19 @@
     </style>
 </head>
 <body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <button onclick="darkMode()" class="w3-button"><i class='far fa-lightbulb'></i></button>
+        <a href="https://github.com/Aviroen?tab=repositories" class="w3-button"><i class='fa fa-github'></i></a>
+        <a href="https://bsky.app/profile/aviroen.bsky.social" class="w3-button"><i class='fas fa-external-link-alt'></i></a>
+        <a href="https://www.twitch.tv/aviroen" class="w3-button"><i class='fab fa-twitch'></i></a>
+        <a href="https://ko-fi.com/aviroen" class="w3-button"><i class='fa fa-credit-card'></i></a>
+        <a href="https://www.patreon.com/cw/aviroen" class="w3-button"><i class='fab fa-patreon'></i></a>
+    </div>
+
     <div class="bgimg w3-display-container w3-mobile">
-        <div class="w3-margin-top w3-display-topleft w3-container">
-            <p>
-                <button onclick="darkMode()" class="w3-button"><i class='far fa-lightbulb'></i></button>
-                <a href="https://github.com/Aviroen?tab=repositories" class="w3-button"><i class='fa fa-github'></i></a>
-                <a href="https://bsky.app/profile/aviroen.bsky.social" class="w3-button"><i class='fas fa-external-link-alt'></i></a>
-                <a href="https://www.twitch.tv/aviroen" class="w3-button"><i class='fab fa-twitch'></i></a>
-                <a href="https://ko-fi.com/aviroen" class="w3-button"><i class='fa fa-credit-card'></i></a>
-                <a href="https://www.patreon.com/cw/aviroen" class="w3-button"><i class='fab fa-patreon'></i></a>
-            </p>
-        </div>
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
         <div class="w3-margin-top w3-display-topmiddle w3-container">
             <p><button onclick="document.getElementById('button1').style.display='block'" class="w3-button">regular art</button></p>
             <p><button onclick="document.getElementById('button2').style.display='block'" class="w3-button">stardew art</button></p>
@@ -95,6 +97,13 @@
         function darkMode() {
             let x = document.body;
             x.classList.toggle("w3-black");
+        }
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
         }
     </script>
 </body>
