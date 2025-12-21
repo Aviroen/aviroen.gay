@@ -24,12 +24,14 @@
 </head>
 <body>
     <div class="bgimg w3-display-container w3-text-white">
-        <div class="w3-display-middle w3-jumbo">
-            <p>logo</p>
+        <div class="w3-display-topright">
+            <button class="w3-button w3-light-grey" onclick="darkMode()">Toggle dark mode</button>
         </div>
-        <div class="w3-display-topleft w3-container w3-xlarge">
-            <p><button onclick="document.getElementById('button1').style.display='block'" class="w3-button w3-black">button_1</button></p>
-            <p><button onclick="document.getElementById('button2').style.display='block'" class="w3-button w3-black">button_2</button></p>
+        <div class="w3-display-topmiddle w3-container w3-xlarge">
+            <p><button onclick="document.getElementById('button1').style.display='block'" class="w3-button w3-black">regular art</button></p>
+            <p><button onclick="document.getElementById('button2').style.display='block'" class="w3-button w3-black">stardew art</button></p>
+            <p><button onclick="document.getElementById('button3').style.display='block'" class="w3-button w3-black">stardew events</button></p>
+            <p><button onclick="document.getElementById('button4').style.display='block'" class="w3-button w3-black">miscellaneous</button></p>
         </div>
         <div class="w3-display-bottomright w3-container">
             <p class="w3-xlarge">all prices are in USD</p>
@@ -52,6 +54,11 @@
                 <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/7thanniv.png" class="w3-image"/>
             </div>
         </div>
-    </div>
+    </div><script>
+    function darkMode() {
+        let x = document.body;
+        x.classList.toggle("w3-black");
+    }
+</script>
 </body>
 </html>
