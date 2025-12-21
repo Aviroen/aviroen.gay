@@ -24,8 +24,8 @@
 </head>
 <body>
     <div class="bgimg w3-display-container w3-text-white">
-        <div class="w3-display-topright">
-            <button class="w3-button w3-light-grey" onclick="darkMode()">Toggle dark mode</button>
+        <div class="w3-display-topright w3-container w3-xlarge">
+            <button class="w3-button w3-light-grey" onclick="darkMode()"><i class='far fa-lightbulb'></i></button>
         </div>
         <div class="w3-display-topmiddle w3-container w3-xlarge">
             <p><button onclick="document.getElementById('button1').style.display='block'" class="w3-button w3-black">regular art</button></p>
@@ -54,11 +54,13 @@
                 <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/7thanniv.png" class="w3-image"/>
             </div>
         </div>
-    </div><script>
+    </div>
+    
+    <script>
     function darkMode() {
         let x = document.body;
         x.classList.toggle("w3-black");
     }
-</script>
+    </script>
 </body>
 </html>
