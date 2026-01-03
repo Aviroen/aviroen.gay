@@ -1,119 +1,75 @@
+<!--
+Responsive Webcomic Layout Template v1.0
+by Scott Andrew LePera
+https://scottandrew.com
+
+On BlueSky:
+https://bsky.app/profile/neathobby.com
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webcomic Layout Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- these <link> tags bring in the Kirang Haerang font from Google fonts. You can point these to other fonts, or remove them. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <title>Aviroen's Bubble</title>
-    <style>
-        body, h1, h5 {
-            font-family: "Raleway", sans-serif
-        }
-
-        body, html {
-            height: 100%
-        }
-
-        .bgimg {
-            background-image: url('https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/back.png');
-            min-height: 100%;
-            background-position: left;
-            background-size: cover;
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="bgimg w3-display-container w3-mobile">
-
-        <!-- Sidebar/menu -->
-        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
-            <br>
-            <div class="w3-container">
-                <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-                    <i class="fa fa-remove"></i>
-                </a>
+    <div class="outer">
+        <header>
+            <!-- Top banner graphic. Remove the <a> to remove the link. -->
+            <a href="/"><img alt="My Cool Web Comic banner" src="img/backgroundDark.png"></a>
+        </header>
+        <nav class="stack">
+            <div class="menu">
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle" tabindex="0">Menu</label>
+            </div>
+            <div id="nav-sections" class="stack">
+                <!-- The site navigation links. Point these to other pages on your website. -->
+                <a href="/">About</a>
+                <a href="/">Archive</a>
+                <a href="/">Shop</a>
+                <a href="/">Blog</a>
+                <a href="/">RSS</a>
                 <button onclick="darkMode()" id="myLightbulb"><i class="fa fa-lightbulb-o"></i></button>
-                <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/7thanniv.png" style="width:45%;" class="w3-round"><br><br>
-                <h4><b>JUST SOME STUPID RABBIT SUFFERING UNDER THE WEIGHT OF SOCIETY</b></h4>
-            </div>
-            <div class="w3-bar-block">
-                <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
-                <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-                <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-            </div>
-
-            <div class="w3-panel w3-large">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
             </div>
         </nav>
+        <main>
 
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-        <span class="w3-button w3-hide-large w3-right w3-xxlarge" onclick="darkMode()" id="myLightbulb"><i class="fa fa-lightbulb-o"></i></span>
+            <!-- The "comic-page" tag class will apply styles to your comic images to ensure they scale with the screen size. -->
+            <div class="comic-page">
+                <h2>Chapter 1: The Beginning.</h2>
+                <img alt="Sample comic page" src="img/7thanniv.png">
+            </div>
 
-        <div class="w3-display-container w3-middle">
-            <div class="w3-row">
-                    <div class="w3-col" style="width:700px"><p></p></div>
-                    <div class="w3-col" style="width:20%">
-                        <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/7thanniv.png" style="width:100%" onclick="onClick(this)">
-                    </div>
-                    <div class="w3-col" style="width:20%">
-                        <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/backgroundDark.png" style="width:100%" onclick="onClick(this)">
-                    </div>
-            </div>
-            <div class="w3-row">
-                <div class="w3-col" style="width:700px"><p></p></div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/bigportraits.gif" style="width:100%" onclick="onClick(this)">
-                </div>
-            </div>
-            <div class="w3-row">
-                <div class="w3-col" style="width:700px"><p></p></div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/Renyap.gif" style="width:100%" onclick="onClick(this)">
-                </div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/RenClosed.gif" style="width:100%" onclick="onClick(this)">
-                </div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/Renquiet.gif" style="width:100%" onclick="onClick(this)">
-                </div>
-            </div>
+        </main>
+        <!-- These are the page-to-page comic navigation links. -->
+        <div id="comic-nav">
+            <a href="/">&lt;&lt; First</a>
+            <a href="/">&lt; Previous</a>
+            <a href="/">Next &gt;</a>
+            <a href="/">Last &gt;&gt;</a>
         </div>
 
-        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-            <img class="w3-modal-content" id="img01" style="width:100%">
-        </div>
+        <article id="notes">
+            <p>This web comic template will reconfigure itself based on screen size. Try it on your phone and on a laptop!</p>
+            <p><a href="/">Download this template here. (version 1.0)</a></p>
+            <p>You can use this text block for author notes about this page or chapter.</p>
+        </article>
 
+        <footer>&copy; 2025 Your Cool Web Comic LLC.</footer>
     </div>
-
     <script>
         function darkMode() {
             let x = document.body;
             x.classList.toggle("w3-black");
-        }
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
         }
     </script>
 </body>
