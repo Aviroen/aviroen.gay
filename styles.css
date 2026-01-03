@@ -42,7 +42,7 @@ main {
 }
 
 .comic-page {
-    container-type: inline-size;
+    display: inline-size;
 }
 
     .comic-page:not(:last-child) {
@@ -132,7 +132,7 @@ label[for="nav-toggle"] {
     display: flex;
     justify-content: space-around;
     font-family: var(--nav-font);
-    container-type: inline-size;
+    display: inline-size;
     & a
 
 {
