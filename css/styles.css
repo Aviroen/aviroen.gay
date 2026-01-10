@@ -29,7 +29,7 @@ header img {
 
 /* header font */
 #showComic, header, h1, h2, h3, h4, h5 {
-    font-family: 'Cherry Cream Soda', cursive;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* body font */
@@ -138,8 +138,8 @@ header #nav {
     /* style archive table cells */
     .archiveTable td {
         padding: 3px;
-        vertical-align: center;
-    }
+        vertical-align: middle;
+    } 
 
 /* style table cell in which page title is displayed */
 .archiveCellTitle:not(.leftAlignTableText) {
