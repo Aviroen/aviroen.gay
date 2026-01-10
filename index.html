@@ -1,120 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <title>Aviroen's Bubble</title>
-    <style>
-        body, h1, h5 {
-            font-family: "Raleway", sans-serif
-        }
-
-        body, html {
-            height: 100%
-        }
-
-        .bgimg {
-            background-image: url('https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/back.png');
-            min-height: 100%;
-            background-position: left;
-            background-size: cover;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WebComic</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Cherry Cream Soda -->
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bgimg w3-display-container w3-mobile">
 
-        <!-- Sidebar/menu -->
-        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
-            <br>
-            <div class="w3-container">
-                <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-                    <i class="fa fa-remove"></i>
-                </a>
-                <button onclick="darkMode()" id="myLightbulb"><i class="fa fa-lightbulb-o"></i></button>
-                <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/7thanniv.png" style="width:45%;" class="w3-round"><br><br>
-                <h4><b>JUST SOME STUPID RABBIT SUFFERING UNDER THE WEIGHT OF SOCIETY</b></h4>
-            </div>
-            <div class="w3-bar-block">
-                <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
-                <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-                <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-            </div>
+    <!-- most of the elements on these pages are defined in the js files as functions, then we tell these functions where to show up on the page by placing empty divs and naming those divs the name of the js functions. check the js files to edit these elements in more detail.-->
 
-            <div class="w3-panel w3-large">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
-            </div>
-        </nav>
+    <div align="center">
+        <!-- header that has the logo image and top page navigation. don't forget to put this on every page -->
+        <div class="writeHeader"></div>
 
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-        <span class="w3-button w3-hide-large w3-right w3-xxlarge" onclick="darkMode()" id="myLightbulb"><i class="fa fa-lightbulb-o"></i></span>
+        <!-- make sure that if you want to turn on automatically scrolling to the top of the comic when you load a new page, keep the id of this div and the variable "navScrollTo" in showcomic.js the same-->
+        <div id="showComic">
 
-        <div class="w3-display-container w3-middle">
-            <div class="w3-row">
-                <div class="w3-col" style="width:700px"><p></p></div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/7thanniv.png" style="width:100%" onclick="onClick(this)">
-                </div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/backgroundDark.png" style="width:100%" onclick="onClick(this)">
-                </div>
-            </div>
-            <div class="w3-row">
-                <div class="w3-col" style="width:700px"><p></p></div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/bigportraits.gif" style="width:100%" onclick="onClick(this)">
-                </div>
-            </div>
-            <div class="w3-row">
-                <div class="w3-col" style="width:700px"><p></p></div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/Renyap.gif" style="width:100%" onclick="onClick(this)">
-                </div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/RenClosed.gif" style="width:100%" onclick="onClick(this)">
-                </div>
-                <div class="w3-col" style="width:20%">
-                    <img src="https://raw.githubusercontent.com/Aviroen/aviroen.gay/refs/heads/main/Images/Renquiet.gif" style="width:100%" onclick="onClick(this)">
-                </div>
-            </div>
+            <!-- write the title of the page. -->
+            <div class="writePageTitle"></div>
+            <!-- write top navigation -->
+            <div class="writeNav"></div>
+            <!-- write the current page of your comic -->
+            <div class="writePageClickable"></div>
+            <!-- write bottom navigation -->
+            <div class="writeNav"></div>
+
         </div>
-
-        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-            <img class="w3-modal-content" id="img01" style="width:100%">
-        </div>
-
+    </div>
+    <div id="authorNotes">
+        <h2>Author Notes</h2>
+        <!-- write the author notes for the current page-->
+        <div class="writeAuthorNotes"></div>
     </div>
 
-    <script>
-        function darkMode() {
-            let x = document.body;
-            x.classList.toggle("w3-black");
-        }
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
+    <!-- footer that has a link back to rarebit, and ideally has copyright info and stuff. again, don't forget to put this on every page-->
+    <div class="writeFooter"></div>
 
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-        }
-    </script>
+    <!-- really important- every js script is called here, be sure to always put them just before the closing body tag, use a defer attribute, and call them in this specific order.-->
+    <script src="js/comic_settings.js" defer></script>
+    <script src="js/comic_show.js" defer></script>
+    <script src="js/comic_header.js" defer></script>
+    <script src="js/comic_footer.js" defer></script>
 </body>
 </html>
