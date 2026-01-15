@@ -25,6 +25,13 @@ header img {
     display: table;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 /*FONTS*/
 
 /* header font */
@@ -111,9 +118,19 @@ header #nav {
     }
 
 /* style comic page image */
-.comicPage img {
-    width: 300px;
-    max-width: 58%;
+/* On screens that are 992px wide or less */
+@media screen and (max-width: 992px) {
+    .comicPage img {
+        width: 900px;
+        max-width: 98%;
+    }
+}
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+    .comicPage img {
+        width: 300px;
+        max-width: 58%;
+    }
 }
 
 /* style author notes */
