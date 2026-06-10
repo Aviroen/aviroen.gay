@@ -6,9 +6,9 @@ document.querySelector(".writeHeader").innerHTML = `
 
         <div id="nav">
             <a href="index.html">HOME</a> |
-            <a href="archive.html">ARCHIVE</a> |
-            <a href="about.html">ABOUT</a> |
-            <a href="characters.html">CHARACTERS</a>
+            <a href="https://ggmods.com/profile/QA733654/">GGMODS</a> |
+            <a href="https://www.nexusmods.com/profile/aviroen">NEXUSMODS</a> |
+            <a href="https://archiveofourown.org/users/Aviroen/pseuds/Aviroen.html">AO3</a>
         </div>
     </header>
 `;
