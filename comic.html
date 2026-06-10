@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Aviroen's Bubble</title>
+    <title>Webcomic</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +17,24 @@
         <!-- header that has the logo image and top page navigation. don't forget to put this on every page -->
         <div class="writeHeader"></div>
 
+        <!-- make sure that if you want to turn on automatically scrolling to the top of the comic when you load a new page, keep the id of this div and the variable "navScrollTo" in showcomic.js the same-->
+        <div id="showComic">
+
+            <!-- write the title of the page. -->
+            <div class="writePageTitle"></div>
+            <!-- write top navigation -->
+            <div class="writeNav"></div>
+            <!-- write the current page of your comic -->
+            <div class="writePageClickable"></div>
+            <!-- write bottom navigation -->
+            <div class="writeNav"></div>
+
+        </div>
+    </div>
+    <div id="authorNotes">
+        <h2>Author Notes</h2>
+        <!-- write the author notes for the current page-->
+        <div class="writeAuthorNotes"></div>
     </div>
 
     <!-- footer that has a link back to rarebit, and ideally has copyright info and stuff. again, don't forget to put this on every page-->
