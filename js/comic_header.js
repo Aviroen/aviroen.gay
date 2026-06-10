@@ -9,6 +9,8 @@ document.querySelector(".writeHeader").innerHTML = `
             <a href="https://ggmods.com/profile/QA733654/">GGMODS</a> |
             <a href="https://www.nexusmods.com/profile/aviroen">NEXUSMODS</a> |
             <a href="https://archiveofourown.org/users/Aviroen/pseuds/Aviroen.html">AO3</a> |
+            <a href="https://ko-fi.com/aviroen">KO-FI</a> |
+            <a href="https://bsky.app/profile/aviroen.bsky.social">BSKY</a> |
             <a href="comic.html">COMIC</a>
         </div>
     </header>
