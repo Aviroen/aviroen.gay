@@ -8,4 +8,4 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min; // The maximum is exclusive and the minimum is inclusive
 }
 
-document.writeMemes('<img src="img/memes' + getRandomInt(1, 20) + '.jpg">')
+document.writeMemes('<img src="img/memes' + getRandomInt(1, 2) + '.jpg">')
