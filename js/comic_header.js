@@ -5,14 +5,14 @@ document.querySelector(".writeHeader").innerHTML = `
         <a href="index.html"><img src="/img/header.png" alt="" /></a> 
 
         <div id="nav">
-            <a href="index.html">HOME</a> |
-            <a href="https://ggmods.com/profile/QA733654/">GGMODS</a> |
-            <a href="https://www.nexusmods.com/profile/aviroen">NEXUSMODS</a> |
-            <a href="https://archiveofourown.org/users/Aviroen/pseuds/Aviroen.html">AO3</a> |
-            <a href="https://ko-fi.com/aviroen">KO-FI</a> |
-            <a href="https://bsky.app/profile/aviroen.bsky.social">BSKY</a> |
-            <a href="comic.html">COMIC</a> |
-            <a href="guides.html">MOD GUIDES</a>
+            <button class="button button3"><a href="index.html">HOME</a></button>
+            <button class="button button3"><a href="https://ggmods.com/profile/QA733654/">GGMODS</a></button>
+            <button class="button button3"><a href="https://www.nexusmods.com/profile/aviroen">NEXUSMODS</a></button>
+            <button class="button button3"><a href="https://archiveofourown.org/users/Aviroen/pseuds/Aviroen.html">AO3</a></button>
+            <button class="button button3"><a href="https://ko-fi.com/aviroen">KO-FI</a></button>
+            <button class="button button3"><a href="https://bsky.app/profile/aviroen.bsky.social">BSKY</a></button>
+            <button class="button button3"><a href="comic.html">COMIC</a></button>
+            <button class="button button3"><a href="sdvmods.html">SDV MODS</a>
         </div>
     </header>
 `;
