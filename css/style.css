@@ -41,7 +41,7 @@ header img {
 }
 
 /* body font */
-.subPage p, footer, #authorNotes, .archiveTable {
+.subPage p, footer, #authorNotes, .archiveTable, #guides {
     font-family: 'Open Sans', sans-serif;
     font-size: large;
 }
@@ -132,6 +132,14 @@ header #nav {
 
 /* style author notes */
 #authorNotes {
+    margin: auto;
+    padding: 3px;
+    padding-top: 0px;
+    width: 900px;
+    max-width: 98%;
+}
+/* style guides notes */
+#guides {
     margin: auto;
     padding: 3px;
     padding-top: 0px;
