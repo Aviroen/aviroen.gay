@@ -30,7 +30,7 @@ function writePageClickable(div,clickable) {
         document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`; //display comic page without link
     } else if (pg < maxpg) {
         //check whether comic is on the last page
-        document.querySelector(div).innerHTML = `<div class="comicPage"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`; //display comic page and make it so that clicking it will lead you to the next page
+        document.querySelector(div).innerHTML = `<div class="comicPage"><a href="comic.html?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`; //display comic page and make it so that clicking it will lead you to the next page
     } else {
         document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`; //display comic page without link
     }
@@ -126,7 +126,7 @@ function writeNav(imageToggle) {
         //FIRST BUTTON
         if (pg > 1) {
             //wait until page 2 to make button active
-            return `<a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
+            return `<a href="comic.html?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 0);
@@ -148,7 +148,7 @@ function writeNav(imageToggle) {
         //PREV BUTTON
         if (pg > 1) {
             //wait until page 2 to make button active
-            return `<a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
+            return `<a href="comic.html?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 1);
@@ -162,7 +162,7 @@ function writeNav(imageToggle) {
         //NEXT BUTTON
         if (pg < maxpg) {
             //only make active if not on the last page
-            return `<a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
+            return `<a href="comic.html?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 2);
@@ -176,7 +176,7 @@ function writeNav(imageToggle) {
         //LAST BUTTON
         if (pg < maxpg) {
             //only make active if not on last page
-            return `<a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
+            return `<a href="comic.html?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 3);
@@ -191,9 +191,9 @@ function writeNav(imageToggle) {
 function keyNav() {
   document.addEventListener("keydown", (e) => {
   if ((e.key == 'ArrowRight' || e.key.toLowerCase() == 'd') && pg < maxpg) { //right arrow or D goes to next page
-    window.location.href = "?pg=" + (pg + 1) + navScrollTo;
+      window.location.href = "comic.html?pg=" + (pg + 1) + navScrollTo;
   } else if ((e.key == "ArrowLeft" || e.key.toLowerCase() == "a") && pg > 1) { //left arrow or A goes to previous page
-    window.location.href = "?pg=" + (pg - 1) + navScrollTo;
+      window.location.href = "comic.html?pg=" + (pg - 1) + navScrollTo;
   } else if (e.key.toLowerCase() == "w") { //W scrolls up
     window.scrollBy({ top: -30 });
   } else if (e.key.toLowerCase() == "s") { //S scrolls down
