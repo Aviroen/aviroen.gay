@@ -64,6 +64,8 @@ header img {
 
 /* for pictures displayed to the left */
 .rightPic {
+    position: sticky;
+    top: 0;
     clear: left;
     float: right;
     margin-left: 20px;
@@ -71,6 +73,8 @@ header img {
 
 /* for pictures displayed to the left */
 .leftPic {
+    position: sticky;
+    top: 0;
     clear: right;
     float: left;
     margin-left: 20px;
@@ -288,3 +292,16 @@ html, body {
         .container .btn:hover {
             background-color: black;
         }
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create 5 equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    padding: 5px;
+}
