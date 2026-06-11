@@ -19,74 +19,332 @@
     <!-- most of the elements on these pages are defined in the js files as functions, then we tell these functions where to show up on the page by placing empty divs and naming those divs the name of the js functions. check the js files to edit these elements in more detail.-->
     <!-- header that has the logo image and top page navigation. don't forget to put this on every page -->
     <div class="writeHeader" align="center"></div>
-    <br />
+
     <img src="img/favicon/android-chrome-192x192.png" alt="Ngao" class="clearfix leftPic" />
     <div id="guides">
         <h2>If you're here you probably want the walkthrough for Soulbound Bloodhound - Stardew Valley Standalone NPC</h2>
-        <p>
-            <br />First, you'll need to drink the juice from the Wizard.
-            <br />After roughly 4 or 5 days Ngao's intro event should start at the WizardHouse. (He'll start his daily schedule the day after you drink the juice.)
-            <br />1 Heart: WizardHouse (again) / Any time
-            <br />2 Heart: Town / Any time
-            <br />3 Heart: AdventureGuild / Any time
-            <br />4 Heart: Farm / 4 or 5 days after watching the 3 heart / Any time
-            <br />5 Heart part 1: Forest / Any time
-            <br />5 Heart part 2: WizardHouse / 4 or 5 days after watching 5 Heart part 1 / Any time
-            <br />5 Heart part 3: Farm / Raining / Any time (THERE IS A FAIL-STATE HERE, IT IS PURPOSEFUL, YOU'LL KNOW.)
-            <br />6 Heart part 1: WizardHouse / Any time / (ONLY IF YOU DIDN'T PICK THE 'BAD' ANSWER FROM PREVIOUS.)
-            <br />6 Heart part 2: Any of the portals should now be interactable, go ahead, touch it
-            <br />7 Heart part 1: Ngao's Room / 1 or 2 days after he was a trinket
-            <br />7 Heart part 2: Beach / Raining / Any time
-            <br />8 Heart (DATING QUESTION): Forest / Leo must have moved in / Any time
-            <br />9 Heart: Farm / Fall 18th / Any time (THIS IS NOT REQUIRED BY ANY OTHER EVENT, BUT IT DOES REQUIRE THE 8 HEART TO HAVE BEEN WATCHED.)
-            <br />10 Heart part 1: Beach / Dating / 9PM
-            <br />10 Heart part 2: Farm / 1 or 2 days BEFORE your wedding date of choice / Any time
-            <br />------ Married Events ------
-            <br />11 Heart part 1: WizardHouse / Married / Any time
-            <br />11 Heart part 2: Ngao's Room / 5 or 6 days after seeing previous event
-            <br />11 Heart part 3: Ngao's Room / Must have completed quest up until this point (Deliver an item to the Wizard.)
-            <br />11 Heart part 4: [REDACTED] Area / Received a loot drop
-            <br />11 Heart part 5: Farmhouse / 5 or 6 days after seeing previous event
-            <br />12 Heart part 1: Ngao's Room / 5 or 6 days after seeing 11 part 5
-            <br />12 Heart part 2: Ngao's Room / Must have completed quest up until this point (Deliver an item to Ngao.)
-            <br />13 Heart: Farmhouse / 5 or 6 days after watching 12 part 2
-            <br />14 Heart: Farm / Any time
-            <div class="row">
-                <div class="column">
-                    <img src="img/mods/ngaoflat.gif" />
-                </div>
-                <div class="column">
-                    <img src="img/mods/ngaohover.gif" />
-                </div>
-                <div class="column">
-                    <img src="img/mods/ngaosmack.gif" />
-                </div>
-                <div class="column">
-                    <img src="img/mods/ngaowalk.gif" />
-                </div>
-                <div class="column">
-                    <img src="img/mods/ngaowalkb.gif" />
-                </div>
+        <table class="center">
+            <tr>
+                <th>Heart Level</th>
+                <th>Location</th>
+                <th>Other Requirements</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>0 Heart</td>
+                <td>WizardHouse</td>
+                <td>4 or 5 days after drinking the junimo juice.</td>
+                <td>Welcome, the war-torn Bloodhound. He'll start his daily schedule after a day of seeing the junimo juice event.</td>
+            </tr>
+            <tr>
+                <td>1 Heart</td>
+                <td>WizardHouse</td>
+                <td>None</td>
+                <td>Experience Ngao's plight.</td>
+            </tr>
+            <tr>
+                <td>2 Heart</td>
+                <td>Town</td>
+                <td>None</td>
+                <td>Brain-numbing activity to keep Ngao out of the Wizard/Witch's hair.</td>
+            </tr>
+            <tr>
+                <td>3 Heart</td>
+                <td>Adventurer's Guild</td>
+                <td>None</td>
+                <td>Marlon and Gil being old babysitters.</td>
+            </tr>
+            <tr>
+                <td>4 Heart</td>
+                <td>Farm</td>
+                <td>4 or 5 days after seeing previous.</td>
+                <td>Do YOU have magic?</td>
+            </tr>
+            <tr>
+                <td>5 Heart</td>
+                <td>Forest</td>
+                <td>None</td>
+                <td>Part 1: Ruh roh raggy.</td>
+            </tr>
+            <tr>
+                <td>5 Heart</td>
+                <td>WizardHouse</td>
+                <td>4 or 5 days after seeing previous.</td>
+                <td>Part 2: RUH ROH RAGGY--</td>
+            </tr>
+            <tr>
+                <td>5 Heart</td>
+                <td>Farm</td>
+                <td>Raining</td>
+                <td>Part 3: Oh we're in it now huh, hope you don't get triggered by PTSD.</td>
+            </tr>
+            <tr>
+                <td>6 Heart</td>
+                <td>WizardHouse</td>
+                <td>If you didn't pick the very obviously incorrect answer from previous.</td>
+                <td>Part 1: Masking! Masking the pain! Mask away the pain!</td>
+            </tr>
+            <tr>
+                <td>6 Heart</td>
+                <td>Portals</td>
+                <td>Touch the portal. Do it.</td>
+                <td>Part 2: Hello?? Where are we??</td>
+            </tr>
+            <tr>
+                <td>7 Heart</td>
+                <td>Ngao's Room</td>
+                <td>A day or two after seeing him as a trinket.</td>
+                <td>Part 1: You got some splainin' to do, mister.</td>
+            </tr>
+            <tr>
+                <td>7 Heart</td>
+                <td>Beach</td>
+                <td>Raining</td>
+                <td>Part 2: We're back at it again with the PTSD-</td>
+            </tr>
+            <tr>
+                <td>8 Heart</td>
+                <td>Forest</td>
+                <td>Leo must have moved in.</td>
+                <td>ClaireStoryOfSeasons' favorite CHIMKEN event. No other notes.</td>
+            </tr>
+            <tr>
+                <td>9 Heart</td>
+                <td>Farm</td>
+                <td>Fall 18</td>
+                <td>Self explanatory if you look at his profile.</td>
+            </tr>
+            <tr>
+                <td>10 Heart</td>
+                <td>Beach</td>
+                <td>Must be dating. 9:00 PM</td>
+                <td>Part 1: Oh? Where are we going? YIPEE??</td>
+            </tr>
+            <tr>
+                <td>10 Heart</td>
+                <td>Farm</td>
+                <td>Must be dating. 1 or 2 days BEFORE the wedding date of your choice.</td>
+                <td>Part 2: Authors Note: I fucking hated scripting this event so I shoved all the vanilla NPCs in.</td>
+            </tr>
+            <tr>
+                <td>11 Heart</td>
+                <td>WizardHouse</td>
+                <td>Married</td>
+                <td>Part 1: Where are we go-ruh roh</td>
+            </tr>
+            <tr>
+                <td>11 Heart</td>
+                <td>Ngao's Room</td>
+                <td>5 or 6 days after seeing previous.</td>
+                <td>Part 2: You alright there, champ? No? Well I guess we're going into the portal.</td>
+            </tr>
+            <tr>
+                <td>11 Heart</td>
+                <td>Ngao's Room</td>
+                <td>Must have completed up until the quest: 'Fight'</td>
+                <td>Part 3: Hope you got your boxing gloves on this boi's a trooper.</td>
+            </tr>
+            <tr>
+                <td>11 Heart</td>
+                <td>[REDACTED] Area</td>
+                <td>Triggers upon looting the item from [REDACTED]</td>
+                <td>Part 4: Oh boy oh boy oh boy oh boy--</td>
+            </tr>
+            <tr>
+                <td>11 Heart</td>
+                <td>Farmhouse</td>
+                <td>4 or 5 days after seeing previous.</td>
+                <td>Part 5: Oh shit is that a Final Fantasy XIV Critically Acclaimed MMO referen--</td>
+            </tr>
+            <tr>
+                <td>12 Heart</td>
+                <td>Ngao's Room</td>
+                <td>4 or 5 days after seeing previous.</td>
+                <td>Part 1: It's time to rummage through Ngao's books in that study.</td>
+            </tr>
+            <tr>
+                <td>12 Heart</td>
+                <td>Ngao's Room</td>
+                <td>Must have completed up to the quest: 'Soulbound Bloodhound'</td>
+                <td>Part 2: OH SHIT TITLE DROP</td>
+            </tr>
+            <tr>
+                <td>13 Heart</td>
+                <td>Farmhouse</td>
+                <td>4 or 5 days after seeing previous.</td>
+                <td>Authors Note: hi this is my 4th wall break saying hi to the player, you!</td>
+            </tr>
+            <tr>
+                <td>14 Heart</td>
+                <td>Farm</td>
+                <td>None</td>
+                <td>Are we FINALLY done with all of this--oh shit a cliffhanger for my expansion.</td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="column">
+                <img src="img/mods/ngaoflat.gif" />
             </div>
-        </p>
-        <p>
-            <br />------ Schedule ------
-            <br />Friday through Monday - 7 AM - WizardHouse - 11 PM - Sleep
-            <br />Tuesday - 12 PM - Forest Portal - 11 PM - Sleep
-            <br />Wednesday - 12 PM - Beach OR AdventureGuild - 11 PM - Sleep
-            <br />Thursday - 12 PM - Town - 11 PM - Sleep
-            <br />Raining - IslandWest All Day
-            <br />------ Married ------
-            <br />Friday through Monday - 7 AM - WizardHouse - 11 PM - Sleep
-        </p>
-        <p>
-            <br />------ Gift Tastes ------
-            <br />Loves: [Mycology] Tom Yuea Phai / Banana Pudding / Coffee
-            <br />Crab Cakes / Dish O' The Sea / Golden Pumpkin / Maki Roll
-            <br />Mango Sticky Rice / Pearl / Pepper Poppers / Rice Pudding
-            <br />Salmon Dinner / Seafoam Pudding / Spicy Eel / Survival Burger
-            <br />Tom Kha Soup / Triple Shot Espresso / Tropical Curry
-        </p>
+            <div class="column">
+                <img src="img/mods/ngaohover.gif" />
+            </div>
+            <div class="column">
+                <img src="img/mods/ngaosmack.gif" />
+            </div>
+            <div class="column">
+                <img src="img/mods/ngaowalk.gif" />
+            </div>
+            <div class="column">
+                <img src="img/mods/ngaowalkb.gif" />
+            </div>
+        </div>
+        <table class="center">
+            <tr>
+                <th>Day</th>
+                <th>Location</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>WizardHouse</td>
+                <td>7:00 AM</td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Ngao's Room</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Forest</td>
+                <td>12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Ngao's Room</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Beach OR Adventurer's Guild</td>
+                <td>12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Ngao's Room</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Forest</td>
+                <td>12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Ngao's Room</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>WizardHouse</td>
+                <td>7:00 AM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Ngao's Room</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>WizardHouse</td>
+                <td>7:00 AM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Ngao's Room</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>WizardHouse</td>
+                <td>7:00 AM</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Ngao's Room</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Monday Married</td>
+                <td>WizardHouse</td>
+                <td>7:00 AM</td>
+            </tr>
+            <tr>
+                <td>Monday Married</td>
+                <td>Farmhouse</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday Married</td>
+                <td>WizardHouse</td>
+                <td>7:00 AM</td>
+            </tr>
+            <tr>
+                <td>Friday Married</td>
+                <td>Farmhouse</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday Married</td>
+                <td>WizardHouse</td>
+                <td>7:00 AM</td>
+            </tr>
+            <tr>
+                <td>Saturday Married</td>
+                <td>Farmhouse</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sunday Married</td>
+                <td>WizardHouse</td>
+                <td>7:00 AM</td>
+            </tr>
+            <tr>
+                <td>Sunday Married</td>
+                <td>Farmhouse</td>
+                <td>11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Raining</td>
+                <td>IslandWest</td>
+                <td>All day</td>
+            </tr>
+        </table>
+        <table class="center">
+            <tr>
+                <th>Loves</th>
+            </tr>
+            <tr>
+                <td>[Mycology] Tom Yuea Phai</td>
+                <td>Banana Pudding</td>
+                <td>Coffee</td>
+                <td>Crab Cakes</td>
+                <td>Dish O' The Sea</td>
+                <td>Golden Pumpkin</td>
+                <td>Maki Roll</td>
+                <td>Mango Sticky Rice</td>
+                <td>Pearl</td>
+                <td>Pepper Poppers</td>
+                <td>Rice Pudding</td>
+                <td>Salmon Dinner</td>
+                <td>Seafoam Pudding</td>
+                <td>Spicy Eel</td>
+                <td>Survival Burger</td>
+                <td>Tom Kha Soup</td>
+                <td>Triple Shot Espresso</td>
+                <td>Tropical Curry</td>
+            </tr>
+        </table>
     </div>
     <!-- footer that has a link back to rarebit, and ideally has copyright info and stuff. again, don't forget to put this on every page-->
     <div class="writeFooter"></div>
