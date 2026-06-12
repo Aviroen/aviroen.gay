@@ -13,6 +13,7 @@ document.querySelector(".writeHeader").innerHTML = `
             <a href="https://bsky.app/profile/aviroen.bsky.social"><button class="button button3">BSKY</button></a>
             <a href="comic.html"><button class="button button3">COMIC</button></a>
             <a href="sdvmods.html"><button class="button button3">SDV MODS</button></a>
+            <a href="friends.html"><button class="button button3">FRIENDS</button></a>
         </div>
     </header>
 `;
