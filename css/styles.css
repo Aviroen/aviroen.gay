@@ -3,6 +3,8 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 /* universal background color */
 body {
