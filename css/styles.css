@@ -1,0 +1,229 @@
+/*to make sure everything is pixel-based size, wise*/
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/* universal background color */
+body {
+    background-color: #666666;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    margin: auto;
+    padding: 3px;
+    padding-top: 0px;
+    width: 1300px;
+    max-width: 98%;
+}
+/* header image */
+header img {
+    width: 500px;
+    max-width: 98%;
+}
+/* clearfix hack to prevent image overflow. check out the W3Schools page on it. */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* for pictures displayed to the left */
+.rightPic {
+    position: sticky;
+    top: 0;
+    clear: left;
+    float: right;
+    margin-left: 20px;
+}
+
+/* for pictures displayed to the left */
+.leftPic {
+    position: sticky;
+    top: 0;
+    clear: right;
+    float: left;
+    margin-left: 20px;
+}
+
+link colors
+a {
+    color: white;
+}
+
+a:hover {
+    color: #DA5437;
+}
+
+/* HEADER */
+header #nav {
+    font-size: 20px;
+    width: 98%;
+    margin: auto;
+}
+
+/* style nav button images */
+.comicNav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+    .comicNav img {
+        width: 80px;
+        max-width: 98%;
+        padding-right: 30px;
+    }
+
+/* style comic page image */
+/* On screens that are 992px wide or less */
+@media screen and (max-width: 992px) {
+    .comicPage img {
+        width: 900px;
+        max-width: 98%;
+    }
+}
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+    .comicPage img {
+        width: 300px;
+        max-width: 58%;
+    }
+}
+
+/* style author notes */
+#authorNotes {
+    margin: auto;
+    padding: 3px;
+    padding-top: 0px;
+    width: 900px;
+    max-width: 98%;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+}
+
+    footer p {
+        margin: auto;
+    }
+
+    footer a {
+        color: #c8d32b
+    }
+
+        footer a:hover {
+            color: #868d26
+        }
+
+/* take away margins from the edges of the screen */
+html, body {
+    margin: 0;
+}
+
+/*my misc bullshit*/
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 2px;
+}
+
+.button2 {
+    border-radius: 4px;
+}
+
+.button3 {
+    border-radius: 8px;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+
+.button5 {
+    border-radius: 50%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(75%, 75%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .container .btn:hover {
+            background-color: black;
+        }
+
+.row {
+    display: flex;
+}
+
+/* Create 5 equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+    table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: black;
+}
