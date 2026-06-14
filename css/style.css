@@ -58,6 +58,10 @@ header img {
     padding: 0px 12px 12px;
 }
 
+    .subPage:not(.archivePage) {
+        text-align: center;
+    }
+
 /* for pictures displayed to the left */
 .rightPic {
     position: sticky;
@@ -76,14 +80,19 @@ header img {
     margin-left: 20px;
 }
 
- link colors 
+/* specific to Characters */
+.charTable, .charTable td {
+    width: 100%;
+}
+
+link colors
 a {
     color: white;
 }
 
-    a:hover {
-        color: #DA5437;
-    }
+a:hover {
+    color: #DA5437;
+}
 
 /* HEADER */
 header #nav {
@@ -123,9 +132,6 @@ header #nav {
         width: 300px;
         max-width: 58%;
     }
-    div.flex-container {
-        flex-direction: column;
-    }
 }
 
 /* style author notes */
@@ -135,6 +141,57 @@ header #nav {
     padding-top: 0px;
     width: 900px;
     max-width: 98%;
+}
+
+/* ARCHIVE PAGE */
+
+/* style table in which archive is displayed */
+.archiveTable {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+    /* style archive table cells */
+    .archiveTable td {
+        padding: 3px;
+        vertical-align: middle;
+    }
+
+/* style table cell in which page title is displayed */
+.archiveCellTitle:not(.leftAlignTableText) {
+    max-width: 300px;
+    text-align: center;
+}
+
+.archiveCellDate {
+    text-align: right;
+    min-width: 120px;
+}
+
+.archiveCellNum {
+    text-align: center;
+    min-width: 30px;
+}
+
+/* style the thumbnails on the archive page */
+.archiveCellThumb {
+    width: 500px;
+    max-width: 60px;
+}
+
+    .archiveCellThumb img {
+        max-width: 100%;
+    }
+
+/* for left aligning the text in a table cell */
+.leftAlignTableText td {
+    text-align: left;
+}
+
+/* highlight a table row and make pointer into hand when moused over */
+.archiveRow:hover {
+    background-color: #DA5437;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -164,6 +221,15 @@ html, body {
 }
 
 /*my misc bullshit*/
+/* style guides notes */
+#guides {
+    margin: auto;
+    padding: 3px;
+    padding-top: 0px;
+    width: 1300px;
+    max-width: 98%;
+}
+
 .button {
     background-color: white;
     border: none;
@@ -175,7 +241,64 @@ html, body {
     font-size: large;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.button1 {
+    border-radius: 2px;
+}
+
+.button2 {
+    border-radius: 4px;
+}
+
+.button3 {
     border-radius: 8px;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+
+.button5 {
+    border-radius: 50%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(75%, 75%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .container .btn:hover {
+            background-color: black;
+        }
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
 }
 
 /* Create 5 equal columns that sits next to each other */
@@ -183,6 +306,7 @@ html, body {
     flex: 25%;
     padding: 5px;
 }
+
 table {
     border: 1px solid black;
     border-collapse: collapse;
@@ -202,12 +326,3 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
     color: black;
 }
-
-div.flex-container {
-    display: flex;
-    flex-direction: row;
-}
-
-    div.flex-container > div {
-        margin: 10px;
-    }
