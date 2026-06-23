@@ -10,6 +10,7 @@ document.querySelector(".writeHeader").innerHTML = `
             <a href="https://www.nexusmods.com/profile/aviroen"><button class="button">NEXUSMODS</button></a>
             <a href="https://archiveofourown.org/users/Aviroen/pseuds/Aviroen.html"><button class="button">AO3</button></a>
             <a href="https://ko-fi.com/aviroen"><button class="button">KO-FI</button></a>
+            <a href="https://www.patreon.com/cw/aviroen"><button class="button">PATREON</button></a>
             <a href="https://bsky.app/profile/aviroen.bsky.social"><button class="button">BSKY</button></a>
             <a href="comic.html"><button class="button">COMIC</button></a>
             <a href="sdvmods.html"><button class="button">SDV MODS</button></a>
