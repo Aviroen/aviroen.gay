@@ -143,55 +143,10 @@ header #nav {
     max-width: 98%;
 }
 
-/* ARCHIVE PAGE */
-
-/* style table in which archive is displayed */
-.archiveTable {
-    width: 90%;
-    border-collapse: collapse;
-}
-
-    /* style archive table cells */
-    .archiveTable td {
-        padding: 3px;
-        vertical-align: middle;
-    }
-
-/* style table cell in which page title is displayed */
-.archiveCellTitle:not(.leftAlignTableText) {
-    max-width: 300px;
-    text-align: center;
-}
-
-.archiveCellDate {
-    text-align: right;
-    min-width: 120px;
-}
-
-.archiveCellNum {
-    text-align: center;
-    min-width: 30px;
-}
-
-/* style the thumbnails on the archive page */
-.archiveCellThumb {
-    width: 500px;
-    max-width: 60px;
-}
-
-    .archiveCellThumb img {
-        max-width: 100%;
-    }
 
 /* for left aligning the text in a table cell */
 .leftAlignTableText td {
     text-align: left;
-}
-
-/* highlight a table row and make pointer into hand when moused over */
-.archiveRow:hover {
-    background-color: #DA5437;
-    cursor: pointer;
 }
 
 /* FOOTER */
@@ -221,14 +176,6 @@ html, body {
 }
 
 /*my misc bullshit*/
-/* style guides notes */
-#guides {
-    margin: auto;
-    padding: 3px;
-    padding-top: 0px;
-    width: 1300px;
-    max-width: 98%;
-}
 
 .button {
     background-color: white;
@@ -293,9 +240,17 @@ html, body {
             background-color: black;
         }
 
-* {
-    box-sizing: border-box;
+.box {
+    border: 2px dotted rgb(96 139 168);
+    display: flex;
+    justify-content: space-between;
 }
+
+    .box > * {
+        border: 2px solid rgb(96 139 168);
+        border-radius: 5px;
+        padding: 20px;
+    }
 
 .row {
     display: flex;
